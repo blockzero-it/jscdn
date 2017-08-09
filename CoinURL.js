@@ -11,19 +11,19 @@ jQuery(document).ready(function($) {
     var nocoin = $(this).data('nocoin');
 
     if (nocoin) {
-      continue;
+      return true;
     }
 
     var deny = false;
     $.each(exclude, function() {
       if (link.indexOf($(this))) {
         deny = true;
-        return;
+        return true;
       }
     });
 
     if (deny) {
-      continue;
+      return true;
     }
 
     link.attr('href', redirect + encodeURIComponent(link));
