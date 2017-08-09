@@ -8,6 +8,11 @@ jQuery(document).ready(function($){
     for(var i = 0; i < links.length; i++) {
         var url = $(links[i]).attr("href");
         
+        var nocoin = $(links[i]).attr("nocoin");
+        if(nocoin){
+            continue;
+        }
+        
         var deny = false;
         for(var j = 0; j < exclude.length; j++) {
             if(url.indexOf(exclude[j]) != -1) {
