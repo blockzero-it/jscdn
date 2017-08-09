@@ -1,3 +1,5 @@
+//<script src="CryptoPrice.js"></script>
+//1.0 BTC = <coincap currency="bitcoin" fiat="usd">0.0</coincap>$
 jQuery(document).ready(function($) {
   $.each($('coincap'), function() {
     var thisCoincap = $(this);
