@@ -1,5 +1,6 @@
 //<script src="CryptoPrice.js"></script>
 //1.0 BTC = <coincap currency="bitcoin" fiat="usd">0.0</coincap>$
+//Valid FIAT: {"AUD", "BRL", "CAD", "CHF", "CNY", "EUR", "GBP", "HKD", "IDR", "INR", "JPY", "KRW", "MXN", "RUB", "USD"}
 jQuery(document).ready(function($) {
   $.each($('coincap'), function() {
     var thisCoincap = $(this);
