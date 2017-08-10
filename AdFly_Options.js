@@ -4,6 +4,6 @@ jQuery(document).ready(function($) {
   var popunder = true;
   var adfly_domain = 'out.blockzero.it';
   var exclude_domains = ['blockzero.it', 'facebook.com', 'twitter.com', 'creativecommons.org'];
-  $.$.ajaxSetup({ cache: true });
+  $.ajaxSetup({ cache: true });
   $.getScript('https://cdn.ay.gy/js/link-converter.js', function(a, b, c) {});
 });
